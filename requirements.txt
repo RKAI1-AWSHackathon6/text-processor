@@ -1,0 +1,4 @@
+sqlalchemy==2.0.19
+psycopg2==2.9.6
+pinecone-client==2.2.1
+openai==0.27.8
