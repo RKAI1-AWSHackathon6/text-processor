@@ -1,3 +1,4 @@
+from typing import Optional
 from pydantic import BaseModel
 
 
@@ -6,7 +7,7 @@ class BaseToken(BaseModel):
     name: str
     id: int
     icon: str
-    rank: int
+    rank: Optional[int]
 
 
 class BaseRequest(BaseModel):

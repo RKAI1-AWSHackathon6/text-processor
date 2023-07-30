@@ -46,6 +46,7 @@ classifier = Classify()
 with SessionLocal() as db:
     favourite = db.query(Favourite).all()
     for f in favourite:
+        # print(f.symbol, f.name, f.id, f.icon, f.rank)
         classifier.add_token(BaseToken(symbol=f.symbol, name=f.name, id=f.id, icon=f.icon, rank=f.rank))
 
 if __name__ == '__main__':

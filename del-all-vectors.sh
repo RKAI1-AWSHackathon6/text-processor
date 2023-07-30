@@ -1,0 +1,1 @@
+PYTHONPATH=. python tasks/del_all_vectors.py
